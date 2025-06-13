@@ -110,7 +110,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🎯 Future Enhancements
 
-- [ ] Add more sophisticated NLP models (BERT, RoBERTa)
+- [ ] Add more sophisticated NLP models (Gemni, etc..)
 - [ ] Implement confidence scores for predictions
 - [ ] Add batch processing for multiple articles
 - [ ] Create API endpoints for programmatic access
