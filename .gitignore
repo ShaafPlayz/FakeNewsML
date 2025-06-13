@@ -1,0 +1,16 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore environment files
+.env
+
+# Ignore static files generated during build
+static/css/
+static/js/
+
+# Ignore node_modules
+node_modules/

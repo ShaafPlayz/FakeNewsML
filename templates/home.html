@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='dist/output.css')}}">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+    </style>
+</head>
+
+
+<body class="font-[Inter]">
+
+
+    
+    <div class="flex flex-col items-center justify-center h-screen space-y-8">
+
+        
+
+        <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Fake News</span>    AI.</h1>
+        <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Add your News title and description below.</p>
+
+        <form class="w-5/6 flex flex-col items-center" action="/predict" method="POST">
+            <div class="mb-6 w-5/6">
+                <input type="text" id="default-input" name="title_news" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="News Title..." required>
+            </div>
+            <div class="w-5/6 mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+                <div class="px-4 py-2 bg-white rounded-t-lg dark:bg-gray-800">
+                    <label for="comment" class="sr-only">Your News here</label>
+                    <textarea id="comment"  name="description_news" rows="4" class="w-full px-0 text-sm text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="News Description..." ></textarea>
+                </div>
+                <div class="flex items-center justify-between px-3 py-2 border-t dark:border-gray-600 border-gray-200">
+                    <button type="submit" class="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800">
+                        Submit Data
+                    </button>
+                </div>
+            </div>
+    
+
+        <div id="alert-additional-content-3" class="dark p-4 w-5/6 mb-4 text-green-800 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 dark:border-green-800" role="alert">
+        <div class="flex items-center">
+            <svg class="shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+            </svg>
+            <span class="sr-only">Info</span>
+            <h3 class="text-lg font-medium">Model training successful.</h3>
+        </div>
+
+            <div class="flex flex-row">
+                <div class="mt-2 mb-4 text-sm w-5/6">
+                Our model is trained everytime this webpage reloads.</div>
+                
+
+                <div class="flex flex-col">
+                    <h1 class="text-5xl font-extrabold dark:text-white"> {{ accuracy }}%</h1>
+                    <small class=" font-semibold text-black-500 dark:text-gray-400">Current Model Accuracy</small>
+            </div>
+        
+        </div>
+   
+ <!-- Breadcrumb -->
+
+   
+  
+   
+    
+        
+
+
+        
+    </div>
+
+
+
+
+    
+   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+</html>
