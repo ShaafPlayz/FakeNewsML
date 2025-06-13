@@ -5,7 +5,7 @@
 ## 📸 Screenshots
 
 ### HomePage
-![image](https://github.com/user-attachments/assets/c3e7e8ed-055e-4290-8975-b182527f3ee7)
+![image](https://github.com/user-attachments/assets/4517819b-85fd-4bcc-9a0a-9195b994f1b4)
 
 ### Use Case
 ![image](https://github.com/user-attachments/assets/f990da5d-a581-4e04-a141-142b74ee8783)
