@@ -2,6 +2,13 @@
 
 **FakeNewsML** is a lightweight Flask web app that uses a machine learning model to classify news text as real or fake. It demonstrates how AI and NLP can be used to fight misinformation.
 
+## HomePage
+![image](https://github.com/user-attachments/assets/fade2a2a-74ca-4c47-9524-526ecd8d5dd1)
+
+
+## Use Case
+![image](https://github.com/user-attachments/assets/f990da5d-a581-4e04-a141-142b74ee8783)
+
 ## 🔍 Features
 
 - User-friendly web interface built with Flask
